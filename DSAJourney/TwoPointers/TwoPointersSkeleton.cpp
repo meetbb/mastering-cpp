@@ -31,17 +31,3 @@ bool twoSum(vector<int> &arr, int target) {
     }
     return false;
 }
-
-int main() {
-    vector<int> arr = {-3, -1, 0, 1, 2};        
-    int target = -2;
-    if (twoSum(arr, target))
-    {
-        cout << "true";
-    }
-    else
-    {
-        cout << "false";
-    }    
-    return 0;
-}
