@@ -6,6 +6,9 @@
 .DS_Store
 ._*
 
+*.dSYM/
+*.dSYM
+
 # macOS Spotlight
 .Spotlight-V100
 .Trashes
