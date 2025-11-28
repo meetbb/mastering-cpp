@@ -1,6 +1,6 @@
 # Compiler
 CXX = clang++
-CXXFLAGS = -std=c++17 -g -Wall -I . -I ./DSAJourney -I ./DSAJourney/TwoPointers
+CXXFLAGS = -std=c++17 -g -Wall -I . -I ./DSAJourney -I ./DSAJourney/TwoPointers -I ./DesignPatterns -I ./DesignPatterns/Creational -I ./DesignPatterns/Creational/Factory
 
 # Find all .cpp files recursively
 SOURCES = $(shell find . -name "*.cpp")
