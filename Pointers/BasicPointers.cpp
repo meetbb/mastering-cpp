@@ -253,3 +253,32 @@ void BasicPointers::nullPointerHandling() {
         ptr = 0x0
     */
 }
+
+void update(int *p) {
+    p = p + 1;
+    *p = 100;
+}
+
+void BasicPointers::silentWrongOutput() {
+    int arr[] = {10, 20, 30};
+    update(arr);
+    std::cout << arr[0] << " " << arr[1] << " " << arr[2] << std::endl;    
+}
+
+int* getValue() {
+    int x = 50;
+    int *ptr = &x;
+    return ptr;
+}
+
+void BasicPointers::getPointer() {
+    int* ptr = getValue();
+    std::cout << *ptr << std::endl;
+
+    /*
+        My Graph
+        x = 50       | 0x1001
+        ptr = 0x1001 | 0x1002
+        Answer will be 50
+    */
+}

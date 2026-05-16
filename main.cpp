@@ -1,6 +1,7 @@
 #include <iostream>
 #include "DesignPatterns/Creational/Factory/VehicleFactory.h"
 #include "DSAJourney/Strings/ValidAnagram.h"
+#include "Pointers/LevelTwoPointers.h"
 
 int main() {    
     // std::string choice;
@@ -28,17 +29,18 @@ int main() {
     // {
     //     cout << "No duplicates" << endl;
     // }
-    ValidAnagram solution;
-    string s = "anagram";
-    string t = "nagaram";
-    if (solution.isAnagram(s, t))
-    {
-        cout << "Both strings are anagram of each other." << endl;
-    }
-    else
-    {
-        cout << "Both strings are not anagram of each other." << endl;
-    }
-    
+    // ValidAnagram solution;
+    // string s = "anagram";
+    // string t = "nagaram";
+    // if (solution.isAnagram(s, t))
+    // {
+    //     cout << "Both strings are anagram of each other." << endl;
+    // }
+    // else
+    // {
+    //     cout << "Both strings are not anagram of each other." << endl;
+    // }
+    LevelTwoPointers levelTwoPointers;
+    levelTwoPointers.dynamicArrAllocation();
     return 0;
 }

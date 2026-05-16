@@ -18,6 +18,8 @@ public:
     void pointerToPointer();
     void pointerArgument();
     void nullPointerHandling();
+    void silentWrongOutput();
+    void getPointer();
 };
 
 #endif
