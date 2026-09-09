@@ -76,3 +76,29 @@ void LevelTwoPointers::constantPointer() {
     const int* p1 = &x; // can't modify *p1
     int* const p2 = &x; // can't change p2
 }
+
+void LevelTwoPointers::dynamicArrayResize() {
+    int n = 3;
+    int *arr = new int[n]{1, 2, 3};
+
+    int newSize = 5;
+    int *newArr = new int[newSize];
+
+    for (int i = 0; i < n; i++)
+    {
+        newArr[i] = arr[i];
+    }
+    
+    delete[] arr;
+    arr = newArr;
+
+    arr[3] = 4;
+    arr[4] = 5;
+
+    for (int i = 0; i < newSize; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    
+    delete[] arr;    
+}

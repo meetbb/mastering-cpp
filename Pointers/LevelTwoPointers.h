@@ -9,6 +9,7 @@ public:
     void dynamicMemoryExp();
     void dynamicArrAllocation();
     void constantPointer();
+    void dynamicArrayResize();
 };
 
 #endif
